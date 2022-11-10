@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>CERN Krakow Winter Campus</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form action="#" th:action="@{/czesc}" method="post">
+  <p><input type="submit" value="Say Hello"/></p>
+</form>
+<span th:if="${helloAnswer != null}">
+  <p th:text="${helloAnswer}" />
+</span>
+</body>
+</html>
